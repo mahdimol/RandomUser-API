@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "Sans-Regular";
+  src: url(../fonts/Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Medium";
+  src: url(../fonts/Sans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Sans-DemiBold";
+  src: url(../fonts/Sans-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Bold";
+  src: url(../fonts/Sans-Bold.ttf);
+}
+
+/* Import Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  @apply w-full h-screen flex items-center font-Sans-Medium text-white flex-col justify-center;
+}
+
+.bg {
+  @apply relative h-full w-full bg-black select-none child:select-none;
+}
+
+.bg-linear {
+  @apply absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px];
+}
+
+.bg-circle {
+  @apply absolute left-0  top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)];
+}
+
+.bg-card {
+  @apply fixed top-0 right-0 w-full h-screen;
+}
+.user-card {
+  @apply w-[400px] p-5 border border-white/10 relative rounded-3xl bg-zinc-950 shadow-2xl;
+
+  header {
+    @apply flex flex-col gap-3 items-center py-3 justify-center;
+  }
+
+  main {
+    @apply space-y-2;
+  }
+}
+
+.user-avatar-card {
+  @apply size-20 rounded-full flex items-center justify-center bg-zinc-900;
+}
+
+.user-avatar {
+  @apply size-16;
+}
+
+.fullName {
+  @apply font-Sans-Bold text-2xl;
+}
+
+.data {
+  @apply text-sm text-zinc-400 font-Sans-Regular text-center;
+}
+
+.username {
+  @apply text-indigo-500 underline cursor-pointer duration-150 hover:text-opacity-80 select-none;
+}
+
+label {
+  @apply relative after:content-[":"] text-sm text-zinc-400;
+}
+
+.input-element {
+  @apply w-full outline-none h-full  text-sm bg-transparent;
+
+  direction: ltr;
+}
+
+.input-card {
+  @apply w-full h-10 duration-150 flex items-center focus-within:ring-2 rounded-md relative mt-1 px-4 overflow-hidden bg-zinc-900;
+}
+
+.icon {
+  @apply absolute right-5 text-zinc-500;
+}
+
+footer {
+  @apply mt-6 pb-4;
+}
+
+.submit {
+  @apply flex items-center justify-center bg-indigo-600 w-full h-10 rounded-md shadow-inner shadow-indigo-500 duration-150 hover:bg-opacity-90 focus-within:ring-2;
+}
+
+.copyright {
+  @apply mx-auto flex items-center justify-center mt-4 text-green-500 before:content-["💚"] text-xs
+}

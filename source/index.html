@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabzlearn</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bg-card">
+      <div class="bg">
+        <div class="bg-linear"></div>
+        <div class="bg-circle"></div>
+      </div>
+    </div>
+
+    <article class="user-card">
+      <header>
+        <div class="user-avatar-card">
+          <img src="./public/images/male.png" class="user-avatar" alt="" />
+        </div>
+        <div class="user-hero-data">
+          <p class="fullName">Peyman Ahmadi</p>
+          <p class="data username">peymangeek@</p>
+        </div>
+      </header>
+      <main>
+        <div>
+          <label for="email"> ایمیل </label>
+          <div class="input-card">
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter the email address"
+              value="peymangeek@gmail.com"
+              class="input-element"
+            />
+            <span class="icon">
+              <!-- Email icon -->
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div>
+          <label for="phone">شهر </label>
+          <div class="input-card">
+            <input
+              type="text"
+              placeholder="Enter the phone number"
+              value="09123456789"
+              id="city"
+              class="input-element"
+            />
+            <span class="icon">
+              <i class="fas fa-mobile-alt"></i>
+            </span>
+          </div>
+        </div>
+        <div>
+          <label for="phone">گذرواژه</label>
+          <div class="input-card">
+            <input
+              type="text"
+              placeholder="Enter the password"
+              value="Ahmadi1349"
+              id="password"
+              class="input-element"
+            />
+            <span class="icon">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <button class="submit">نمایش کاربر جدید</button>
+      </footer>
+    </article>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
