@@ -1,11 +1,11 @@
-#RandomUser API Integration
+# RandomUser API Integration
 
-#📌 Project Description
+## 📌 Project Description
 
 This project uses the RandomUser API to receive information from a random user (such as name, email, city, username, and password) and display it on a web page. 
 It also displays the appropriate avatar (male or female) based on the user's gender.
 
-#✨ Features
+## ✨ Features
 
 Automatically receive user information when the page loads (window.onload)
 
@@ -25,7 +25,7 @@ Username
 
 Password
 
-#🛠 Technologies used
+## 🛠 Technologies used
 
 HTML & CSS
 
@@ -33,7 +33,7 @@ JavaScript (Fetch API)
 
 RandomUser API
 
-#🚀 How to implement
+## 🚀 How to implement
 
 1. Download the project files.
 2. Open the index.html file in the browser.
